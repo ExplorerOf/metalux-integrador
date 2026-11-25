@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metalux Integrador</title>
+  <meta name="description" content="Aplicação interna da loja de móveis Metalux para gestão dos seus anúncios no Mercado Livre e na Shopee.">
+  <style>
+    :root {
+      --bg: #f6f5f2;
+      --surface: #ffffff;
+      --text: #1d1d1b;
+      --muted: #5f5e5a;
+      --accent: #2f4f4f;
+      --border: #e3e1db;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141413;
+        --surface: #1e1e1c;
+        --text: #f0efea;
+        --muted: #a8a69f;
+        --accent: #8fb3b3;
+        --border: #2e2e2b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    header { margin-bottom: 32px; }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    h1 { font-size: 2rem; margin: 8px 0 12px; line-height: 1.2; }
+    .lead { color: var(--muted); font-size: 1.1rem; margin: 0; }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    h2 { font-size: 1.15rem; margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    p { margin: 0 0 8px; }
+    p:last-child { margin-bottom: 0; }
+    footer { color: var(--muted); font-size: 0.9rem; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="tag">Aplicação interna</span>
+      <h1>Metalux Integrador</h1>
+      <p class="lead">Ferramenta de uso exclusivo da loja de móveis Metalux para gerenciar os próprios anúncios no Mercado Livre e na Shopee.</p>
+    </header>
+
+    <section>
+      <h2>O que a aplicação faz</h2>
+      <ul>
+        <li>Cria e publica anúncios dos produtos da Metalux, com título, descrição, fotos, ficha técnica, variações e SKU.</li>
+        <li>Atualiza preço, estoque e status (pausar e reativar) dos anúncios.</li>
+        <li>Consulta pedidos e vendas para controle de estoque e expedição.</li>
+        <li>Responde perguntas de compradores.</li>
+        <li>Futuramente, gerencia campanhas de anúncios patrocinados (Product Ads) da própria loja.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Quem usa</h2>
+      <p>Somente a equipe da Metalux, na própria conta de vendedor da loja. A aplicação não é oferecida a terceiros e não acessa dados de outros vendedores.</p>
+    </section>
+
+    <section>
+      <h2>Privacidade e dados</h2>
+      <p>Os dados obtidos pelas APIs do Mercado Livre e da Shopee são usados apenas para a gestão da conta da Metalux.</p>
+      <p>As credenciais de acesso ficam armazenadas de forma segura e nenhum dado é vendido, compartilhado ou repassado a terceiros.</p>
+    </section>
+
+    <footer>© 2026 Metalux</footer>
+  </main>
+</body>
+</html>
